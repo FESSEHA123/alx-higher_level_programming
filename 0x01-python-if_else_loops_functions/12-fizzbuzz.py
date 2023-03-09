@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-def uppercase(str):
-    """Print str in uppercase"""
-    for char in str:
-        if ord(char) >= 97 and ord(char) <= 122:
-            char = chr(ord(char) - 32)
-        print("{0}".format(char), end="")
-    print("")
+def fizzbuzz():
+    for num in range(1, 101):
+        if num % 15 == 0:
+            print("FizzBuzz", end=" ")
+        elif num % 5 == 0:
+            print('Buzz', end=" ")
+        elif num % 3 == 0:
+            print("Fizz", end=" ")
+        else:
+            print(num, end=" ")
